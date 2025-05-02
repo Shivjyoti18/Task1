@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>HTML DOCUMENT</title>
+        <style>
+            table, th, td {
+                border: 1px solid white;
+                border-collapse: collapse;
+              }
+              th, td {
+                background-color: #96D4D4;
+              }
+
+        </style>
+        <table style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <div style="border: 1px solid black; width: 250px; padding: 10px;">
+    <p>Lists can be nested (list inside list):</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+</div>
+
+<br>
+
+<div style="border: 1px solid gray; background-color: #f0f0f0; padding: 10px;">
+    <p>Click any of the following links</p>
+    <a href="https://example.com" target="_blank">Opens in New</a> |
+    <a href="https://example.com" target="_self">Opens in Self</a> |
+    <a href="https://example.com" target="_parent">Opens in Parent</a> |
+    <a href="https://example.com" target="_top">Opens in Body</a>
+</div>
+
+<h2 style="text-align: center; color: blue;">Registration form</h2>
+
+<form>
+    <table align="center" border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="firstname"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lastname"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Re-enter Password</td>
+            <td><input type="password" name="repassword"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="number" name="age"></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td><input type="tel" name="phone"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="address" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td><input type="text" name="state"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <select name="country">
+                    <option>Choose your country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Languages known</td>
+            <td>
+                <input type="checkbox" name="language" value="English"> English
+                <input type="checkbox" name="language" value="Kannada"> Kannada
+                <input type="checkbox" name="language" value="Hindi"> Hindi
+                <input type="checkbox" name="language" value="Telugu"> Telugu
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="declaration"> Hereby I declare all the given details are true
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                Log in to <a href="https://acharya.ac.in" target="_blank">Acharya</a> website
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+    </table>
+</form>  
+
+
+
+<title>Styled Table and Shapes</title>
+
+<table class="rounded-table">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+
+<div class="shape-container">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape rounded"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape rounded"></div>
+    <div class="shape oval"></div>
+    <div class="shape"></div>
+    <div class="shape rounded"></div>
+</div>                      
+
+
+<title>Navigation Bars</title>
+    <style>
+        /* Vertical Nav */
+        .vertical-nav {
+            width: 200px;
+            background-color: lightblue;
+            padding: 0;
+            border: 1px solid gray;
+        }
+
+        .vertical-nav a {
+            display: block;
+            color: blue;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .vertical-nav a.home {
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Horizontal Nav */
+        .horizontal-nav {
+            margin-top: 40px;
+            width: 400px;
+            border: 1px solid gray;
+        }
+
+        .horizontal-nav a {
+            float: left;
+            display: block;
+            color: blue;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-right: 1px solid white;
+            background-color: lightgray;
+        }
+
+        .horizontal-nav a.home {
+            background-color: #555;
+            color: white;
+            font-weight: bold;
+        }
+
+        .horizontal-nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Optional center alignment */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Vertical Navigation Bar -->
+    <div>
+        <p><strong>Vertical Navigation Bar</strong></p>
+        <div class="vertical-nav">
+            <a href="#" class="home">Home</a>
+            <a href="#">Java</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+
+    <!-- Horizontal Navigation Bar -->
+    <div>
+        <p><strong>Horizontal Navigation Bar</strong></p>
+        <div class="horizontal-nav">
+            <a href="#" class="home">Home</a>
+            <a href="#">Java</a>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+        </div>
+    </div>
+</div>
+<title>Styled Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    th {
+      background-color: #009879;
+      color: white;
+      padding: 12px;
+      text-align: left;
+    }
+
+    td {
+      padding: 12px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    th, td {
+      border-bottom: 1px solid #dddddd;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Berglunds snabbköp</td>
+      <td>Christina Berglund</td>
+      <td>Sweden</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Königlich Essen</td>
+      <td>Philip Cramer</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Giovanni Rovelli</td>
+      <td>Italy</td>
+    </tr>
+  </table>
+  <title>Hoverable Sidenav</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      position: absolute;
+      left: 0;
+      transition: 0.3s;
+      padding: 15px;
+      width: 200px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .sidenav a:hover {
+      left: 60px;
+    }
+
+    .sidenav .green {
+      top: 20px;
+      background-color: #4CAF50;
+    }
+
+    .sidenav .blue {
+      top: 80px;
+      background-color: #2196F3;
+    }
+
+    .sidenav .red {
+      top: 140px;
+      background-color: #f44336;
+    }
+
+    .sidenav .gray {
+      top: 200px;
+      background-color: #555;
+    }
+
+    .main {
+      margin-left: 60px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#" class="green">Home</a>
+  <a href="#" class="blue">Services</a>
+  <a href="#" class="red">Clients</a>
+  <a href="#" class="gray">Contact</a>
+</div>
+
+<div class="main">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+<title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .login-container {
+      width: 300px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: url('https://cdn-icons-png.flaticon.com/512/149/149071.png') no-repeat center;
+      background-size: cover;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .login-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #45a049;
+    }
+
+    .remember {
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .bottom-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .cancel-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .cancel-btn:hover {
+      background-color: #da190b;
+    }
+
+    .forgot {
+      color: #555;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .forgot:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <div class="avatar"></div>
+  <form>
+    <label><strong>Username</strong></label>
+    <input type="text" placeholder="Enter Username" required>
+
+    <label><strong>Password</strong></label>
+    <input type="password" placeholder="Enter Password" required>
+
+    <button type="submit" class="login-btn">Login</button>
+
+    <div class="remember">
+      <input type="checkbox"> Remember me
+    </div>
+
+    <div class="bottom-bar">
+      <button type="button" class="cancel-btn">Cancel</button>
+      <a href="#" class="forgot">Forgot password?</a>
+    </div>
+  </form>
+</div>
+<div class="wrapper">
+  <div class="sidebar">
+    <ul>
+      <li><a href="#">Home page</a></li>
+      <li><a href="#">Musings</a></li>
+      <li><a href="#">My town</a></li>
+      <li><a href="#">Links</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <h1>My first styled page</h1>
+    <p>Welcome to my styled page!</p>
+    <p>It lacks images, but at least it has style. And it has links, even if they don’t go anywhere…</p>
+    <p>There should be more here, but I don’t know what yet.</p>
+    <hr>
+    <p><em>Made 5 April 2004<br>by myself.</em></p>
+  </div>
+</div>
+
+
+
+    </head>
+
+
+</html>
